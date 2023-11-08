@@ -1,0 +1,12 @@
+1) run--(node -v )
+2) run-(npm init)  then bunch of enter -- then you will see package.json will be created 
+3) go to  tailwind css installation tailwind cli and paralely open that package.json and 
+4) run--(npm install -D tailwindcss) this will nmake dpendensies in the package.json file 
+5)run--(npx tailwindcss init ) -- this will create tailwind.config.js 
+6) next we need to specify the path in the tailwind.config.js so open it and paste "./src/**/*.{html,js}" and also create a new folder named src and make index.css and style.css inside it .
+7) so src--> input.css and dist--> index.html (output.css)
+8) copy @tailwind base;
+@tailwind components;
+@tailwind utilities; inside of input.css file .
+9) next run--(npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch) in the terminal  to get output.css in dist
+10) go to index.html and try bg-color-red and go-live then  similarly dont terminaate the rebuilding process 
